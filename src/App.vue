@@ -35,6 +35,11 @@ p, a, span, label, div, section, h1, h2, h3, h4, h5{
   text-decoration: none;
   transition: 0.3s;
 }
+#app{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 a:hover {
   color: #4a4a4a;
 }
@@ -44,7 +49,10 @@ h1 {
 }
 .container{
   display: flex;
+  justify-content: center;
+  
   .column {
+    max-width: 1400px;
     display: flex;
     flex-direction: column;
     .row {

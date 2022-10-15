@@ -22,6 +22,10 @@
             <a href="">Сотреть проекты</a>
           </div>
         </div>
+        <div class="book">
+          <img src="@/assets/book.png">
+          <a href="http://">Скачать PDF буклет</a>
+        </div>
       </div>
     </div>
   </section>
@@ -40,10 +44,10 @@ $text-hover-color: #cff6ff;
       padding: 1em 2em 0 2em;
     }
     .heading-container{
-      width: 100%;
       height: 35em;
       background: url(../assets/headingImage.png);
-      
+      background-size: 100%;
+      background-position-y: 90%;
       .heading{
         width: 100%;
         height: 35em;
@@ -51,6 +55,19 @@ $text-hover-color: #cff6ff;
         align-items: center;
         flex-direction: column;
         background: linear-gradient(180.33deg, rgba(0, 0, 0, 0.45) 14.06%, rgba(0, 0, 0, 0.25) 99.78%);
+        .book {
+          position: absolute;
+          bottom: -6em;
+          left: -19em;
+          a {
+            position: absolute;
+            left: 11.5em;
+            bottom: 6.2em;
+            width: 6em;
+            text-align: center;
+            font-weight: 600;
+          }
+        }
         .contacts{
           display: flex;
           justify-content: flex-end;
@@ -65,7 +82,7 @@ $text-hover-color: #cff6ff;
           }
         }
         .heading-info{
-          width: 65%;
+          width: 45%;
           a{
             color: $text-color;
             &:hover{
