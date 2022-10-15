@@ -8,6 +8,7 @@ import Galley from '@/sections/Galley.vue'
 import Partners from '@/sections/Partners.vue'
 
 import Menu from '@/components/Menu.vue'
+import Arrow from '@/components/Arrow.vue'
 
 export interface RegComponent {
   name: string;
@@ -43,7 +44,7 @@ export const SectionsPages: Array<RegComponent> = [
 
 export const Components: Array<RegComponent> = [
   {
-    name: 'Menu',
-    component: Menu
+    name: 'Arrow',
+    component: Arrow
   },
 ]

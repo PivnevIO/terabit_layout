@@ -12,7 +12,7 @@
 
 <style lang="scss">
 $main-font-family: 'Montserrat';
-$main-bg-color: #E5E5E5;
+$main-bg-color: #fff;
 *{
   padding: 0;
   margin: 0;
@@ -24,7 +24,16 @@ body{
   font-family: $main-font-family;
   src: local($main-font-family),
    url(./assets/fonts/Montserrat/static/Montserrat-Regular.ttf) format("truetype");
+   font-weight: 500;
 }
+
+@font-face {
+  font-family: $main-font-family;
+  src: local($main-font-family),
+   url(./assets/fonts/Montserrat/static/Montserrat-ExtraBold.ttf) format("truetype");
+   font-weight: 900;
+}
+
 p, a, span, label, div, section, h1, h2, h3, h4, h5{
   font-family: $main-font-family;
   font-style: normal;
@@ -60,6 +69,23 @@ h1 {
       position: relative;
       display: flex;
     }
+    &.column-is-3{
+      width: 33%;
+    }
   }
+}
+@media screen and (min-width: 2000px) {
+.container{
+  display: flex;
+  justify-content: center;
+  .column {
+    &.column-is-3{
+      width: 28%;
+      .row{
+        width: 100%;
+      }
+    }
+  }
+}
 }
 </style>
