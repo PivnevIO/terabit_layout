@@ -19,6 +19,8 @@ $main-bg-color: #fff;
 }
 body{
   background-color: $main-bg-color;
+  
+  background-color: #f6f6f6;
 }
 @font-face {
   font-family: $main-font-family;

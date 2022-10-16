@@ -39,7 +39,7 @@
       <div class="row">
         <h3>Разработчиком архитектурной концепции посёлка и Генеральным проектировщиком является 
               одно из ведущих архитектурных бюро в России 
-              SPEECH Чобан&Кузнецов, во главе которого стоял
+              <strong>SPEECH Чобан&Кузнецов</strong>, во главе которого стоял
               Сергей Кузнецов, ныне Главный Архитектор г. Москвы.</h3>
       </div>
     </div>
@@ -211,8 +211,9 @@ const setActiveNavigation = (data: any): void => {
         justify-content: center;
       }
       h1{
-        margin-top: 2em;
+        margin: 1.3em 0 1em 1em;
         font-weight: 400;
+        font-size: 4em;
       }
     }
   }
