@@ -50,7 +50,6 @@ h1{
   .column:last-child{
     width: 50%;
     .row{
-      width: 56em;
       height: 40em;
       img{
         width: 60em;
