@@ -104,7 +104,7 @@ const bgPosY = (): string => {
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       font-weight: 900;
-      font-size: 100px;
+      font-size: 5em;
       line-height: 122px;
       sup {
         font-size: 50px;
@@ -121,8 +121,17 @@ const bgPosY = (): string => {
   .aboutvillage-img{
     width: 35%;
   }
-  .counter-abo-village{
+  .counter-abo{
     padding-left: 10em;
+    .counter-abo-village{
+      &:last-child{
+        width: 0;
+      }
+      &:last-child{
+        width: 20%;
+        padding-left: 0em;
+      }
+    }
   }
   
 }

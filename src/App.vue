@@ -61,11 +61,9 @@ h1 {
   justify-content: center;
   
   .column {
-    max-width: 1400px;
     display: flex;
     flex-direction: column;
     .row {
-      width: 100%;
       position: relative;
       display: flex;
     }

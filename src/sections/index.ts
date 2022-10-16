@@ -9,6 +9,9 @@ import Partners from '@/sections/Partners.vue'
 
 import Menu from '@/components/Menu.vue'
 import Arrow from '@/components/Arrow.vue'
+import Navigation from '@/components/Navigation.vue'
+import InteractiveButtons from '@/components/interactiveButtons.vue'
+import Icons from "@/components/Icons.vue";
 
 export interface RegComponent {
   name: string;
@@ -44,7 +47,23 @@ export const SectionsPages: Array<RegComponent> = [
 
 export const Components: Array<RegComponent> = [
   {
+    name: 'Icons',
+    component: Icons
+  },
+  {
     name: 'Arrow',
     component: Arrow
+  },
+  {
+    name: 'Menu',
+    component: Menu
+  },
+  {
+    name: 'Navigation',
+    component: Navigation
+  },
+  {
+    name: 'InteractiveButtons',
+    component: InteractiveButtons
   },
 ]
