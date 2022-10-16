@@ -12,6 +12,9 @@ import Arrow from '@/components/Arrow.vue'
 import Navigation from '@/components/Navigation.vue'
 import InteractiveButtons from '@/components/interactiveButtons.vue'
 import Icons from "@/components/Icons.vue";
+import Gallery from '@/components/Gallery.vue'
+
+
 
 export interface RegComponent {
   name: string;
@@ -46,6 +49,10 @@ export const SectionsPages: Array<RegComponent> = [
 ]
 
 export const Components: Array<RegComponent> = [
+  {
+    name: 'Gallery',
+    component: Gallery
+  },
   {
     name: 'Icons',
     component: Icons
