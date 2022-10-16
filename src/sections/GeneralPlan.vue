@@ -46,6 +46,17 @@ h1{
 .schema{
   display: flex;
   justify-content: center;
+  height: 40em;
+  .column:last-child{
+    width: 50%;
+    .row{
+      width: 56em;
+      height: 40em;
+      img{
+        width: 60em;
+      }
+    }
+  }
   .schema-info{
     padding: 0 5em;
     align-self: center;
@@ -65,7 +76,7 @@ h1{
         flex-direction: column;
         align-items: center;
         width: 100%;
-        padding: 3em 4em 0 4em;
+        padding: 2em 4em 0 4em;
         p{
           font-weight: 900;
           font-size: 148px;
@@ -79,9 +90,6 @@ h1{
       }
     }
   }
-  .img{
-    width: 100%;
-  }
 }
 .gen-plan{
   background: url(../assets/GeneralPlan/map_village.jpg);
@@ -89,6 +97,11 @@ h1{
   background-repeat: no-repeat;
   .column{
     height: 55em;
+    width: 100%;
+    .row{
+      justify-content: flex-end;
+      padding-right: 20%;
+    }
     h1{
       padding: 1em 0 0 15em;
     }
